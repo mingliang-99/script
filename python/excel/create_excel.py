@@ -46,35 +46,4 @@ if __name__ == "__main__":
         latency_ms = str(data_array[i]['latency_ms'])
         print ("index=",i,"duration=",str(duration_ms),"bandwidth=",str(bandwidth_kbps),"latency_ms"+str(bandwidth_kbps))
 
-
     workbook.close()
-    # for data_single in data_array:
-    #     if data_single.has_key('duration_ms'):
-    #         duration_ms = data_single['duration_ms'].decode().encode('utf8')
-    #         print ("duration_ms",duration_ms)
-    #     if data_single.has_key('bandwidth_kbps'):
-    #         bandwidth_kbps = data_single['bandwidth_kbps'].decode().encode('utf8')
-    #     if data_single.has_key('latency_ms'):
-    #         latency_ms = data_single['latency_ms'].decode().encode('utf8')        
-
-#    file = open(curve_file, 'r+')
- #   json_data = file.read()
- #   json_str = json.dumps(json_data)
- #   print (json_str)
-
-
-    #contends_arr = str(contends).split('},{')
-    #for i in range(len(contends_arr)):
-    #    file.write(contends_arr[i])
-    #    file.write('\n')
-
-    #file.close()
-    #get_contends_arr(contends)
-  
-    #cmd = "python tools/transform.py --srcfile=\"{}\" --despath=\"{}\" --title=\"{}\" --artist=\"{}\" --album=\"{}\" --comment=\"v1.0\" --channel=\"{}\"".format(srcfile, dstpath, title, artist, album, channel)
-
-    #print(cmd)
-    
-    #ret = execute_cmd(cmd)
-
-    #print(ret)
